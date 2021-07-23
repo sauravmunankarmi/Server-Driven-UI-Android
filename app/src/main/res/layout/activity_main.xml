@@ -12,4 +12,15 @@
         android:layout_height="match_parent"
         />
 
+    <Button
+        android:id="@+id/bt_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="RELOAD"
+        android:elevation="4dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@ object RetrofitClient {
             retrofit = Retrofit.Builder().baseUrl(BASE_URL)
                 .client(
                     OkHttpClient().newBuilder()
-                        .connectTimeout(300, TimeUnit.SECONDS)
+                        .connectTimeout(10, TimeUnit.SECONDS)
                         .addInterceptor(HttpLoggingInterceptor().apply {
                             level =
                                 if (BuildConfig.DEBUG) {

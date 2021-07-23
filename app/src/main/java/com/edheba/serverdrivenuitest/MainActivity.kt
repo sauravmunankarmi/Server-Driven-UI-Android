@@ -38,9 +38,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         apiCall()
+
+        bt_reload.setOnClickListener {
+            apiCall()
+        }
     }
 
     private fun apiCall(){
+        Toast.makeText(applicationContext, "Loading....", Toast.LENGTH_SHORT).show()
         val call: Call<UIResponse> = apiInterface.getUI()
 
         call.enqueue(object : Callback<UIResponse>{
@@ -54,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<UIResponse>, t: Throwable) {
-                Toast.makeText(applicationContext, "conn failure", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "connection failure", Toast.LENGTH_LONG).show()
             }
         })
     }
