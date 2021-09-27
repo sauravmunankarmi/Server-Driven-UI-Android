@@ -1,0 +1,55 @@
+{
+    "layout": {
+        "type": "LinearLayout",
+        "id": "root_layout",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "background": "#0088FF",
+        "orientation": "vertical",
+        "onClick": {
+            "background": "#5588FF"
+        },
+        "children": [
+            {
+                "type": "LinearLayout",
+                "layout_width": "400dp",
+                "layout_height": "200dp",
+                "background": "#00FF11",
+                "orientation": "vertical",
+                "layout_marginTop": "32dp",
+                "layout_gravity": "center",
+                "children": [
+                    {
+                        "type": "TextView",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "text": "@{username}",
+                        "gravity": "center",
+                        "textColor": "#ff0000",
+                        "elevation": "4dp",
+                        "onClick": {
+                            "background": "#5588FF"
+                        }
+                    },
+                    {
+                        "type": "TextView",
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "text": "@{userlastname}",
+                        "gravity": "center",
+                        "textColor": "#ff0000",
+                        "elevation": "4dp",
+                        "id": "text_layout",
+                        "onClick": {
+                            "background": "#5588FF"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "layoutData": {
+        "username": "xyzzzzz",
+        "userlastname": "munankarmi"
+    }
+}
